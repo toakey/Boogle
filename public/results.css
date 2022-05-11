@@ -1,0 +1,132 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    /*background-image: url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1493&q=80);*/
+    /*background-image: url(https://images.unsplash.com/photo-1466094899371-97b327dff551?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);*/
+    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/m33.png);*/
+    /*background-image: url(https://cdn.spacetelescope.org/archives/images/wallpaper4/potw1140a.jpg);*/
+    height: 700px;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    image-rendering: high-quality;
+    overflow: clip;
+
+   }
+.mainmenu {
+    background: rgba(160, 160, 160, 0.6);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    position: fixed;
+    top: 1%;
+    left: 2%;
+ }
+.mainmenu:hover {
+    background-color: rgba(80,80,80,0.6);
+    color: white;
+}
+.results {
+    overflow-y: auto;
+    overflow-x: clip;
+    width: 600px;
+    height: 450px;
+    border-radius: 25px;
+    background: rgba(160, 160, 160, 0.6);
+    position: fixed;
+    top: 10%;
+    left: 8%;
+}
+.title {
+    color: white;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 25px;
+}
+.author {
+    color: white;
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.description {
+    color: white;
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.themes {
+	color: white;
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.recommend {
+    overflow: auto;
+    width: 1375px;
+    height: 150px;
+    border-radius: 25px;
+    background: rgba(160, 160, 160, 0.6);
+    position: fixed;
+    top: 77%;
+    left: 3%;
+}
+.otherbooks {
+    overflow: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.reviewtitle {
+    width: 600px;
+    height: 65px;
+    border-radius: 25px;
+    background: rgba(160, 160, 160, 0.6);
+    position: fixed;
+    top: 10%;
+    right: 8%;
+}
+
+.reviews {
+    overflow-y: auto;
+    width: 600px;
+    height: 378px;
+    border-radius: 25px;
+    background: rgba(160, 160, 160, 0.6);
+    position: fixed;
+    top: 19.2%;
+    right: 8%;
+}
+
+.reviewsfor {
+    color: white;
+    text-align: left;
+    font-size: 13px;
+    margin-left: 25px;
+}
+
+.r {
+    color: white;
+    font-weight: lighter;
+    text-align: justify;
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+}

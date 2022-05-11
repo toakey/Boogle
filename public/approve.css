@@ -1,0 +1,122 @@
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: Arial;
+    /*background-image: url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1493&q=80);*/
+    /*background-image: url(https://images.unsplash.com/photo-1466094899371-97b327dff551?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);*/
+    background-image: url(https://images.unsplash.com/photo-1528819027803-5473f2bf7633?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80);
+    /*background-image: url(https://images.unsplash.com/photo-1546500840-ae38253aba9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2060&q=80);*/
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    image-rendering: high-quality;
+    overflow: clip;
+}
+
+.header {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    width: 500px;
+    height: 100px;
+    border-radius: 25px;
+    background: transparent;
+    position: fixed;
+    top: 3%;
+    left: 33%;
+}
+
+.likely {
+	color: white;
+	font-size: 16px;
+	margin-left: 25px;
+	margin-top: 25px;
+}
+
+.ad {
+	margin-left: 25px;
+	margin-top: 25px;
+}
+
+.checkmark {
+	vertical-align: middle;
+  	height: 25px;
+  	width: 25px;
+  	background-color: #eee;
+}
+
+
+input[type=text], textarea {
+    color: black;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    height: min-content;
+    width: 800px;
+    background: white;
+    border: transparent;
+    border-radius: 10px;
+    /*resize: vertical;*/
+    font-family: arial;
+    padding: 10px;
+    overflow: auto;
+}
+
+.mainmenu {
+    background-color: rgba(200, 200, 200, 0.6);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    position: fixed;
+    top: 3%;
+    left: 88%;
+ }
+ .mainmenu:hover {
+    background-color: white;
+    color: black;
+}
+.review {
+    color: white;
+    display: block;
+    margin-left: 25px;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+.container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 1000px;
+    height: 600px;
+    border-radius: 25px;
+    background: rgba(200, 200, 200, 0.6);
+    position: fixed;
+    top: 15%;
+    left: 15%;
+}
+
+.button {
+	background-color: rgba(200, 200, 200, 0.6);
+	margin-left: 25px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+ }
+
+.button:hover {
+    background-color: white;
+    color: black;
+}

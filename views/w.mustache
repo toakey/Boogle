@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title> Boogle </title>
+	<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div> 
+		<h1 class="header">Boogle</h1>
+	</div>
+	<div class=title1 ></div>
+	<div class="searchbox">
+	<form method="get" action="search">
+ 		<input type="text" placeholder="Search for Book, Author, or Theme" name="query">
+ 	</form>
+	</div>
+
+
+    <div class="hello">
+    	<h1><img class="HAL9000" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/HAL9000.svg/1024px-HAL9000.svg.png">Hello, {{NAME}}</h1>
+	</div>
+
+	<form method="get" action="bookofthemonth">
+		<button class="bom">Book of the Month</button>
+	</form>
+
+	<form method="get" action="reviews">
+		<button class="reviews">Add a Review</button>
+	</form>
+
+	<form method="get" action="moderate">
+		<button id="moderate" class="moderate"></button>
+	</form>
+
+	<script>
+		if({{ADMIN}} == true){
+			console.log("true");
+			document.getElementById("moderate").innerHTML = "Moderate Reviews";
+			document.getElementById("moderate").style.top = "3.5%";
+		}else{
+			console.log("false");
+		}
+	</script>
+	
+
+
+
+
+
+
+</body>
+</html>

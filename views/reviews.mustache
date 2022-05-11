@@ -1,0 +1,69 @@
+<html>
+<head>
+	<title>Reviews</title>
+	<link rel="stylesheet" href="reviews.css">
+
+
+</head>
+<body>
+	<body>
+    <div class="header">
+		<h1>Leave a Review for Your Book Here!</h1>
+	</div>
+
+	<form method="get" action="/w">
+		<button class="mainmenu">Main Menu</button>
+	</form>
+
+	<div class="reviewarea">
+		<form method="get" action="submitReview">
+			<div class="title">
+	 			<input type="text" placeholder="Title" name="t">
+			</div>
+			<div>
+				<select class="dropdown" id="genres" name="g">
+					<option value="">Select the subgenre you think describes the book best!</option>
+					{{#genres}}
+	  					<option value="{{genre}}">{{genre}}</option>
+					{{/genres}}
+				</select>
+
+				<select class="dropdown" id="format" name="f">
+					<option value="">Select the format the book was written in!</option>
+					{{#formats}}
+	  					<option value="{{format}}">{{format}}</option>
+					{{/formats}}
+				</select>
+			</div>
+			<div>
+				<select class="dropdown" id="themes1" name="th1">
+					<option value="">Select a theme!</option>
+					{{#themes}}
+	  					<option value="{{theme}}">{{theme}}</option>
+					{{/themes}}
+				</select>
+				<select class="dropdown" id="themes2" name="th2">
+					<option value="">Select a theme!</option>
+					{{#themes}}
+	  					<option value="{{theme}}">{{theme}}</option>
+					{{/themes}}
+				</select>
+				<select class="dropdown" id="themes3" name="th3">
+					<option value="">Select the style of book!</option>
+					{{#styles}}
+	  					<option value="{{style}}">{{style}}</option>
+					{{/styles}}
+				</select>
+			</div>
+			<div class="review">
+				<textarea type="text" placeholder="Write your review here!" name="r"></textarea>
+			</div>
+			<button class="submit">Submit</button>
+		</form>
+	</div>
+
+
+
+
+</body>
+</html>

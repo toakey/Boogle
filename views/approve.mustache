@@ -1,0 +1,51 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="approve.css">
+</head>
+</html>
+<html>
+<body>
+    <h1 class="header">Submitted Review for "{{TITLE}}"</h1>
+	<div class="container">
+		<form method="get" action="moderateReview">
+
+			<div class="review">
+				<p>Title:</p>
+				<textarea type="text" name="t" value="{{TITLE}}">{{TITLE}}</textarea>
+			</div>
+
+		    <p class="likely">Did the student mean to review "{{LIKELY}}"? (Leaving this field blank indicates that this book is not in the database.)
+		        <input name="l" value="{{LIKELY}}" class="checkmark" type="checkbox">
+		    </p>
+
+		    <div class="ad">
+				<textarea type="text" name="a" placeholder="{{AUTHOR}}"></textarea>
+				<textarea type="text" name="d" placeholder="{{DESCRIPTION}}"></textarea>
+			</div>
+
+		    <div class="review">
+		        <p>The student's review is displayed below. Feel free to fix any grammatical errors, or remove content you find inappropriate.</p>
+		        <textarea type="text" name="r">{{REVIEW}}</textarea>
+		    </div>
+	    	
+	    	<div class="review">
+		    	<p>The themes/style selected:</p>
+		    	<textarea type="text" name="th" value="{{THEMES}}">{{THEMES}}</textarea>
+		        <p>The genre selected:</p>
+		        <textarea type="text" name="g" value="{{GENRE}}">{{GENRE}}</textarea>
+		        <p>The format selected:</p>
+		        <textarea type="text" name="f" value="{{FORMAT}}">{{FORMAT}}</textarea>
+	    	</div>
+	        
+	        <button type="hidden" name="approve" value="approved"class="button">Approve Review</button>
+
+	        <button type="hidden" name="approve" value="reject" class="button">Delete Review</button>
+	    </form>
+	</div>
+	<form method="get" action="/w">
+        <button class="mainmenu">Main Menu</button>
+    </form>
+</body>
+</html>
+

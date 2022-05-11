@@ -1,0 +1,65 @@
+<html>
+<head>
+	<title> Search Results </title>
+	<link rel="stylesheet" href="results.css">
+
+
+</head>
+<body>
+
+<div class="results">
+	<div class="title">
+    	<h1>About "{{TITLE}}":</h1>
+	</div>
+	<div class="author">
+    	<p>Author: {{AUTHOR}}</p>
+	</div>
+	<div class="themes">
+    	<p>Subgenre: {{GENRE}}</p>
+	</div>
+	<div class="themes">
+    	<p>Format/Style: {{STYLE}}</p>
+	</div>
+	<div class="description">
+    	<p>{{DESCRIPTION}}</p>
+	</div>
+	<div class="themes">
+    	<p>Relevant themes/styles: {{THEMES}}</p>
+	</div>
+	
+</div>
+
+<div class="reviewtitle">
+	<div class="reviewsfor">
+		<h1>Reviews for: "{{TITLE}}"</h1>
+	</div>
+</div>
+
+<div class="reviews">
+	<div class="reviewtext">
+		<p class="r">{{REVIEW1}}</p>
+		<p class="r">{{REVIEW2}}</p>
+		<p class="r">{{REVIEW3}}</p>
+		<p class="r">{{REVIEW4}}</p>
+		<p class="r">{{REVIEW5}}</p>
+		<p class="r">{{REVIEW6}}</p>
+		<p class="r">{{REVIEW7}}</p>
+		<p class="r">{{REVIEW8}}</p>
+		<p class="r">{{REVIEW9}}</p>
+		<p class="r">{{REVIEW10}}</p>
+	</div>
+</div>
+
+<div class="recommend">
+	<div class="otherbooks">
+    	<p>Books similar to "{{TITLE}}" include: {{OTHERS}}</p>
+	</div>
+</div>
+
+<form method="get" action="/w">
+		<button class="mainmenu">Back</button>
+	</form>
+
+
+</body>
+</html>

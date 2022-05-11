@@ -1,0 +1,25 @@
+<html>
+<head>
+	<link rel="stylesheet" href="moderate.css">
+</head>
+
+<html>
+<head>
+    <title>Reviews</title>
+    <link rel="stylesheet" href="moderate.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Moderate Reviews Here:</h1>
+    </div>
+    <div class="container">
+    <form method="get" action="/approve">
+        {{#unmoderateds}}
+            <button class="query" name="query" value="{{unmoderated}}">{{unmoderated}}</button>
+        {{/unmoderateds}}
+    </form>
+    </div>
+    <form method="get" action="/w">
+        <button class="mainmenu">Main Menu</button>
+    </form>
+</body>
