@@ -6,7 +6,7 @@
 </html>
 <html>
 <body>
-    <h1 class="header">Submitted Review for "{{TITLE}}"</h1>
+    <h1 class="header">Submitted Review for "{{TITLE}}" by {{USER}}</h1>
 	<div class="container">
 		<form method="get" action="moderateReview">
 
@@ -36,6 +36,9 @@
 		        <textarea type="text" name="g" value="{{GENRE}}">{{GENRE}}</textarea>
 		        <p>The format selected:</p>
 		        <textarea type="text" name="f" value="{{FORMAT}}">{{FORMAT}}</textarea>
+	    	</div>
+	    	<div class="user">
+	    		<textarea type="text" name ="u" value="{{USER}}" >{{EMAIL}}</textarea> 
 	    	</div>
 	        
 	        <button type="hidden" name="approve" value="approved"class="button">Approve Review</button>

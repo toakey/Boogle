@@ -63,11 +63,12 @@ html {
 
 
 
-.bom {
+.user {
 	background-color: transparent;
  	border: none;
  	border-radius: 50px;
  	color: white;
+ 	width: max-content;
  	padding: 15px 32px;
  	text-align: center;
  	text-decoration: none;
@@ -78,10 +79,10 @@ html {
  	transition-duration: 0.5s;
  	position: fixed;
  	bottom: 2%;
- 	left: 83%;
+ 	right: 1%;
  }
 
-.bom:hover {
+.user:hover {
 	background: rgba(250,250,250,0.6);
 	color: rgb(60,60,60);;
 }

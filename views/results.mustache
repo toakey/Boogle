@@ -3,7 +3,6 @@
 	<title> Search Results </title>
 	<link rel="stylesheet" href="results.css">
 
-
 </head>
 <body>
 
@@ -36,18 +35,9 @@
 </div>
 
 <div class="reviews">
-	<div class="reviewtext">
-		<p class="r">{{REVIEW1}}</p>
-		<p class="r">{{REVIEW2}}</p>
-		<p class="r">{{REVIEW3}}</p>
-		<p class="r">{{REVIEW4}}</p>
-		<p class="r">{{REVIEW5}}</p>
-		<p class="r">{{REVIEW6}}</p>
-		<p class="r">{{REVIEW7}}</p>
-		<p class="r">{{REVIEW8}}</p>
-		<p class="r">{{REVIEW9}}</p>
-		<p class="r">{{REVIEW10}}</p>
-	</div>
+		 {{#REVIEWS}}
+            <p class="r">{{REVIEW}}</p>
+        {{/REVIEWS}}
 </div>
 
 <div class="recommend">

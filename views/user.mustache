@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Profile Recommendations</title>
+	<link rel="stylesheet" href="user.css">
+
+
+</head>
+<body>
+	<body>
+    <div>
+		<h1 class="header">Books for you, {{NAME}}</h1>
+	</div>
+
+	<form method="get" action="/w">
+		<button class="mainmenu">Main Menu</button>
+	</form>
+
+	<div class="area">
+		<div>
+			<h2 class="h2">Based on your recent reviews, your:</h2>
+			<p class="favs">Favorite genres are: {{GENRES}}</p>
+			<p class="favs">Favorite formats for books are: {{FORMATS}}</p>
+			<p class="favs">Favorite themes and writing styles are: {{THEMES}}</p>
+			<h2 class="h2">Based on your favorite genre, here are some books you might like!</h2>
+			<p class="favs">{{GRECS}}</p>
+			<h2 class="h2">Based on your favorite format, here are some books you might like!</h2>
+			<p class="favs">{{FRECS}}</p>
+			<h2 class="h2">Please remember that this algorithm is not perfect, and if you haven't reviewed many books, it may not be very accurate!</h2>
+	</div>
+
+
+
+
+
+
+
+</body>
+</html>
