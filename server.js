@@ -599,7 +599,7 @@ server.listen(8080, () => {
 
 // connection.query("ALTER TABLE unmoderated ADD COLUMN user TEXT;", (err) => {});
 
-// connection.query("DELETE FROM users where name='teddyoakey@gmail.com'", (err) => {
+// connection.query("DELETE FROM book where id<29", (err) => {
 // 	console.log();
 // });
 
@@ -609,9 +609,9 @@ server.listen(8080, () => {
 // connection.query("UPDATE book SET description = 'My Side of the Mountain is a middle grade adventure novel written and illustrated by American writer Jean Craighead George published by E. P. Dutton in 1959. It features a boy who learns courage, independence, and the need for companionship while attempting to live in the Catskill Mountains of New York State.' where id=36", (err)=>{});
 // connection.query("UPDATE book SET themes = ? where name=?;", ["Bravery|Overcoming Adversity|Perserverance and Persistance", "Island: Book One: Shipwreck"]);
 
-// connection.query("SELECT * FROM book;", (err, x) => {
-// 	console.log(x);
-// });
+connection.query("SELECT * FROM book;", (err, x) => {
+	console.log(x);
+});
 
 // connection.query("CREATE TABLE unmoderated (id INT AUTO_INCREMENT, name VARCHAR(255), author VARCHAR(255), description TEXT, serialization INT, PRIMARY KEY(id));")
 

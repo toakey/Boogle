@@ -16,6 +16,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Current Database: `main`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `main` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+
+USE `main`;
+
+--
 -- Table structure for table `book`
 --
 
@@ -32,7 +40,7 @@ CREATE TABLE `book` (
   `author` text DEFAULT NULL,
   `description` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=91 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=116 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -42,13 +50,6 @@ CREATE TABLE `book` (
 LOCK TABLES `book` WRITE;
 /*!40000 ALTER TABLE `book` DISABLE KEYS */;
 INSERT INTO `book` VALUES
-(1,'Hatchet','survival|perserverance|isolation','I liked Hatchet\'s themes surrounding perseverance, I also really liked the first person narration.|AHAHHHAHAHHHHH|',NULL,NULL,'',''),
-(9,'Hunger Games','survival|science fiction|dystopia',NULL,NULL,NULL,'',''),
-(15,'Harry Potter and the Sorcerer\'s Stone','Friendship|Good vs. Evil|Third Person Narration',NULL,'Contemporary Fantasy','Traditional Format','',''),
-(16,'The Hobbit','Bravery|Overcoming Adversity|Old School',NULL,'Epic Fantasy','Traditional Format','',''),
-(17,'Wizard of Oz','magic|fantasy|family',NULL,NULL,NULL,'',''),
-(18,'The God of Small Things','love|family|colonialism','This book is sad.||Hi Mom!||I really like pee. The thing that is excreted from your body. When I think about exrections from the body, I think about an expo marker adnsd sdfoijdsf|review,new review,new review,new review',NULL,NULL,'',''),
-(20,'Things Fall Apart','colonialism|religion|belonging','Review',NULL,NULL,'',''),
 (29,'Stamped','Inequality|Overcoming Adversity|Good vs. Evil','','Our World (Nonfiction)','Traditional Format','',''),
 (30,'Wonder','Overcoming Adversity|Identity and Self|School Experiences','','Our World (Fiction)','Traditional Format','',''),
 (31,'George','Bravery|Identity and Self|School Experiences','','Our World (Fiction)','Traditional Format','',''),
@@ -56,7 +57,7 @@ INSERT INTO `book` VALUES
 (33,'Shark Beneath the Reef','Perserverance and Persistance|Bravery|Growing Up','','Wilderness Survival','Traditional Format','',''),
 (34,'The Wild Robot','Identity and Self|Overcoming Adversity|Bravery','','Wilderness Survival','Traditional Format','',''),
 (35,'Julie of the Wolves','Loss and Grief|Overcoming Adversity|Family Relationships','','Our World (Fiction)','Traditional Format','',''),
-(36,'My Side of the Mountain','Overcoming Adversity|Perserverance and Persistance|Growing Up','','Wilderness Survival','Traditional Format','',''),
+(36,'My Side of the Mountain','Overcoming Adversity|Perserverance and Persistance|Growing Up','|I really liked this book—was a really fun read! Especially liked the scene at the lake.|I was an overall fan of the book, but there were certain chapters I felt were a bit slow. I wish there were more action scenes, like the scene with the bear or the scene with the snake. Overall, though, I think the author spoke very fluently through his character.|I thought this book told a great story of removal from modern society and interesting self reflection. My favorite scene was the scene where he has a dream of going home, but it\'s more of a nightmare as he comes to love nature more than the city.|','Wilderness Survival','Traditional Format','Jean Craighead George','My Side of the Mountain is a middle grade adventure novel written and illustrated by American writer Jean Craighead George published by E. P. Dutton in 1959. It features a boy who learns courage, independence, and the need for companionship while attempting to live in the Catskill Mountains of New York State.'),
 (37,'Island: Book One: Shipwreck','Bravery|Overcoming Adversity|Perserverance and Persistance','It was ok ig|','Wilderness Survival','Traditional Format','',''),
 (38,'Island: Book Two: Survival','Overcoming Adversity|Perserverance and Persistance|Bravery','','Wilderness Survival','Traditional Format','',''),
 (39,'Island: Book Three: Escape','Bravery|Perserverance and Persistance|Overcoming Adversity','','Wilderness Survival','Traditional Format','',''),
@@ -92,7 +93,8 @@ INSERT INTO `book` VALUES
 (71,'Pendragon: The Merchant of Death','Good vs. Evil|Bravery|Third Person Narration','','Contemporary Fantasy','Traditional Format','',''),
 (72,'The Unwanteds','Identity and Self|','','Epic Fantasy','Traditional Format','',''),
 (73,'Artemis Fowl','Identity and Self|Perserverance and Persistance|Third Person Narration','','Contemporary Fantasy','Traditional Format','',''),
-(89,'The Bible','Good vs. Evil | Redemption | Old School','Hating god lol|Solid book! Really felt God in the pages.','Religion or Cultural Traditions','Novel-in-verse','Multiple authors','The sacred scriptures of Christians comprising the Old Testament and the New Testament.');
+(114,'Lagoon','Family Relationships|Romance|Silly','Goofy ahh','Chills and Thrills','Poetry','',''),
+(115,'ghost','Overcoming Adversity|Identity and Self|Conversational (Narrator Talking With Reader)','','Our World (Fiction)','Traditional Format','','');
 /*!40000 ALTER TABLE `book` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,8 +112,9 @@ CREATE TABLE `unmoderated` (
   `genre` text DEFAULT NULL,
   `format` text DEFAULT NULL,
   `reviews` text DEFAULT NULL,
+  `user` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=54 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,6 +124,34 @@ CREATE TABLE `unmoderated` (
 LOCK TABLES `unmoderated` WRITE;
 /*!40000 ALTER TABLE `unmoderated` DISABLE KEYS */;
 /*!40000 ALTER TABLE `unmoderated` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `users`
+--
+
+DROP TABLE IF EXISTS `users`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` text DEFAULT NULL,
+  `themes` text DEFAULT NULL,
+  `format` text DEFAULT NULL,
+  `genre` text DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES
+(15,'toakey22@students.stab.org','Overcoming Adversity|Identity and Self|Conversational (Narrator Talking With Reader)|Overcoming Adversity|Perserverance and Persistance|Third Person Narration|Overcoming Adversity|Perserverance and Persistance|Third Person Narration','Traditional Format|Traditional Format|Traditional Format','Our World (Fiction)|Wilderness Survival|Wilderness Survival');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -132,4 +163,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-11 14:25:03
+-- Dump completed on 2022-05-13  8:42:56
